@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding-top: 10px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 ul {
@@ -145,5 +145,51 @@ img {
 .reviews__slider .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
+}
+
+.reviews__slider .swiper-pagination-bullet:first-child {
+    background-image: url('../images/reviews/home.svg');
+    border-radius: 0%;
+    fill: currentColor;
+    background-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
     background-color: #D31342;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+    transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+    transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+    transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+    transform: scale(1);
+}
+
+.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal .swiper-pagination-bullets-dynamic {
+    width: 80px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 18px;
+    margin-left: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+    margin-right: 0px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    transform: translateX(-45%);
 }

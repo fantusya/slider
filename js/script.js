@@ -16,11 +16,11 @@ new Swiper('.reviews__slider', {
         pageUpDown: true,
     },
 
-    loop: true,
-
     autoplay: {
         delay: 2000,
         stopOnLastSlide: true,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
     },
 
     speed: 700,
